@@ -3,7 +3,7 @@ You have a `RecentCounter` class which counts the number of recent requests with
 Implement the `RecentCounter` class:
 
 * `RecentCounter()` Initializes the counter with zero recent requests.
-* `RecentCounter.ping(self, t: int) -> ` Adds a new request at time t, where t represents some time in milliseconds, and returns the number of requests that has happened in the past 3000 milliseconds (including the new request). Specifically, return the number of requests that have happened in the inclusive range [t - 3000, t]. 
+* `RecentCounter.ping(self, time: int) -> ` Adds a new request at time `time`, where `time` represents some time in milliseconds, and returns the number of requests that has happened in the past 3000 milliseconds (including the new request). Specifically, return the number of requests that have happened in the inclusive range `[time - 3000, time]`. 
 
 
 It is **guaranteed** that every call to ping uses a strictly larger value of t than the previous call.

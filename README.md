@@ -13,6 +13,7 @@
 - run `black <morning_task_folder>` and `flake8 <morning_task_folder>`
 - check that your reference solution passes your tests
 - make commit, push and create a PR
+- request review from Ivan and Alex 
 
 
 Important: If the task initially is created for the class on leetcode or codewars, but it could be simplified as a function, please, simplify it.

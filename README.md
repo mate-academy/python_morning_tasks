@@ -1,7 +1,7 @@
 # Python morning tasks
 ### To create tasks:
 
-- clone this repo;
+- fork & clone this repo;
 - run `python3 -m venv venv` and activate env;
 - run `pip install -r requirements.txt`;
 - create new branch, implement morning task inside `task_list` directory (there should be 6 files):

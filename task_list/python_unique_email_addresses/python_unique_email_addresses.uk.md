@@ -10,7 +10,7 @@
 Реалізуйте функцію `num_unique_emails` яка приймає масив рядків `emails`, які ми надсилаємо по одному електронному листу на кожну `emails[i]`, поверніть кількість різних адрес, які фактично отримують листи.
 
 
-Example:
+Приклад:
 ```python
 Input: emails =
 ["test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"]

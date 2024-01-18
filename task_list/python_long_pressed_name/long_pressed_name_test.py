@@ -1,81 +1,81 @@
-from long_pressed_name import Solution
+from long_pressed_name import is_long_pressed_name
 
 
 def test_basic_true_cases():
-    solution = Solution()
-    assert solution.isLongPressedName("alex", "aaleex")
-    assert solution.isLongPressedName("leelee", "lleeelee")
-    assert solution.isLongPressedName("laiden", "laiden")
-    assert solution.isLongPressedName("sam", "ssaaammm")
-    assert solution.isLongPressedName("john", "jjjooohhhnnn")
-    assert solution.isLongPressedName("anna", "aaaaannnnnaaaa")
+    """Test basic cases where the typed name is a valid long-pressed version of the name."""
+    assert is_long_pressed_name("alex", "aaleex")
+    assert is_long_pressed_name("leelee", "lleeelee")
+    assert is_long_pressed_name("laiden", "laiden")
+    assert is_long_pressed_name("sam", "ssaaammm")
+    assert is_long_pressed_name("john", "jjjooohhhnnn")
+    assert is_long_pressed_name("anna", "aaaaannnnnaaaa")
 
 
 def test_basic_false_cases():
-    solution = Solution()
-    assert not solution.isLongPressedName("saeed", "ssaaedd")
-    assert not solution.isLongPressedName("julia", "juuliaa")
-    assert not solution.isLongPressedName("alex", "aaleeex")
-    assert not solution.isLongPressedName("natasha", "nattasha")
+    """Test basic cases where the typed name is not a valid long-pressed version of the name."""
+    assert not is_long_pressed_name("saeed", "ssaaedd")
+    assert not is_long_pressed_name("julia", "juuliaa")
+    assert not is_long_pressed_name("alex", "aaleeex")
+    assert not is_long_pressed_name("natasha", "nattasha")
 
 
 def test_empty_strings():
-    solution = Solution()
-    assert not solution.isLongPressedName("", "a")
-    assert solution.isLongPressedName("", "")
+    """Test cases with empty strings."""
+    assert not is_long_pressed_name("", "a")
+    assert is_long_pressed_name("", "")
 
 
 def test_single_character():
-    solution = Solution()
-    assert solution.isLongPressedName("a", "a")
-    assert solution.isLongPressedName("b", "bbbb")
+    """Test cases with single character names."""
+    assert is_long_pressed_name("a", "a")
+    assert is_long_pressed_name("b", "bbbb")
 
 
 def test_mismatched_characters():
-    solution = Solution()
-    assert not solution.isLongPressedName("ab", "ac")
-    assert not solution.isLongPressedName("cd", "dc")
+    """Test cases where characters do not match."""
+    assert not is_long_pressed_name("ab", "ac")
+    assert not is_long_pressed_name("cd", "dc")
 
 
 def test_long_pressed():
-    solution = Solution()
-    assert solution.isLongPressedName("abc", "aabbcc")
-    assert not solution.isLongPressedName("abcd", "abccdd")
+    """Test longer cases of long-pressed names."""
+    assert is_long_pressed_name("abc", "aabbcc")
+    assert not is_long_pressed_name("abcd", "abccdd")
 
 
 def test_end_characters():
-    solution = Solution()
-    assert not solution.isLongPressedName("abc", "abcc")
-    assert solution.isLongPressedName("abc", "abccccc")
+    """Test cases where extra characters are added at the end."""
+    assert not is_long_pressed_name("abc", "abcc")
+    assert is_long_pressed_name("abc", "abccccc")
 
 
 def test_start_characters():
-    solution = Solution()
-    assert not solution.isLongPressedName("abc", "aabc")
-    assert solution.isLongPressedName("abc", "aaabcc")
+    """Test cases where extra characters are added at the start."""
+    assert not is_long_pressed_name("abc", "aabc")
+    assert is_long_pressed_name("abc", "aaabcc")
 
 
 def test_middle_characters():
-    solution = Solution()
-    assert not solution.isLongPressedName("abc", "abbcc")
-    assert solution.isLongPressedName("abc", "aabbbcc")
+    """Test cases where extra characters are added in the middle."""
+    assert not is_long_pressed_name("abc", "abbcc")
+    assert is_long_pressed_name("abc", "aabbbcc")
 
 
 def test_random_cases():
-    solution = Solution()
-    assert solution.isLongPressedName("random", "rraaannddooommm")
-    assert not solution.isLongPressedName("testing", "tteesstiinngg")
-    assert not solution.isLongPressedName("python", "pyythhoonn")
-    assert solution.isLongPressedName("code", "coooodeee")
+    """Test various random cases."""
+    assert is_long_pressed_name("random", "rraaannddooommm")
+    assert not is_long_pressed_name("testing", "tteesstiinngg")
+    assert not is_long_pressed_name("python", "pyythhoonn")
+    assert is_long_pressed_name("code", "coooodeee")
 
 
 def test_typed_shorter_than_name():
-    solution = Solution()
-    assert not solution.isLongPressedName("abcd", "abc")
-    assert not solution.isLongPressedName("hello", "hell")
+    """Test cases where the typed name is shorter than the actual name."""
+    assert not is_long_pressed_name("abcd", "abc")
+    assert not is_long_pressed_name("hello", "hell")
 
 
 def test_case_sensitivity():
-    solution = Solution()
-    assert not solution.isLongPressedName("Case", "case")
-    assert solution.isLongPressedName("Case", "Caaase")
+    """Test cases to check for case sensitivity."""
+    assert not is_long_pressed_name("Case", "case")
+    assert is_long_pressed_name("Case", "Caaase")

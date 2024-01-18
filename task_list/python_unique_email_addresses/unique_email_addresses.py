@@ -1,3 +1,2 @@
-class Solution:
-    def numUniqueEmails(self, emails: list[str]) -> int:
-        pass
+def num_unique_emails(emails: list[str]) -> int:
+    pass

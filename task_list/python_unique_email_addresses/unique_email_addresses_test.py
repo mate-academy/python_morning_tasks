@@ -2,13 +2,14 @@ from unique_email_addresses import num_unique_emails
 
 
 def test_emails_with_dot_and_plus():
-    """Test emails with dots and plus signs in the local part."""
     emails = [
         "test.email+alex@leetcode.com",
         "test.e.mail+bob.cathy@leetcode.com",
         "testemail+david@lee.tcode.com",
     ]
-    assert num_unique_emails(emails) == 2
+    assert num_unique_emails(emails) == 2, ("The function should recognize that dots do not affect the email address "
+                                            "and"
+                                            " that the part after the plus sign should be ignored.")
 
 
 def test_different_simple_emails():
@@ -34,17 +35,17 @@ def test_emails_with_only_plus():
         "test+hello@leetcode.com",
         "test+world@leetcode.com",
     ]
-    assert num_unique_emails(emails) == 1
+    assert num_unique_emails(emails) == 1, "Should be 1 unique email."
 
 
 def test_emails_with_both_dot_and_plus_mixed():
-    """Test emails with a mix of dots and plus signs in the local part."""
+
     emails = [
         "test.email+alex@leetcode.com",
         "testemail+alex@leetcode.com",
         "test.email.leet+code@leetcode.com",
     ]
-    assert num_unique_emails(emails) == 1
+    assert num_unique_emails(emails) == 1, "Should be 1 unique email."
 
 
 def test_emails_with_different_domains():

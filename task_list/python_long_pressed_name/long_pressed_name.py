@@ -1,2 +1,2 @@
-def is_long_pressed_name(self, name: str, typed: str) -> bool:
+def is_long_pressed_name(name: str, typed: str) -> bool:
     pass

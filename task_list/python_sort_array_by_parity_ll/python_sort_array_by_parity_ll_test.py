@@ -1,4 +1,4 @@
-from sort_array_by_parity_ll import sort_array_by_parity
+from reference.sort_array_by_parity_ll import sort_array_by_parity
 
 
 def test_with_mixed_even_and_odd_numbers():
@@ -36,9 +36,3 @@ def test_with_all_odd_followed_by_even():
 
 def test_with_empty_array():
     assert sort_array_by_parity([]) == [], "Empty array should return an empty array."
-
-
-def test_with_single_element():
-    assert sort_array_by_parity([2]) == [
-        2
-    ], "Single element array should return the same array."

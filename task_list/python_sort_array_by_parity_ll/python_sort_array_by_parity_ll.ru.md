@@ -5,7 +5,7 @@ Implement the `sort_array_by_parity` function to sort the array so that whenever
 Return any answer array that satisfies this condition.
 
 
-Example :
+Example:
 ```python
 Input: nums = [4,2,5,7]
 Output: [4,5,2,7]

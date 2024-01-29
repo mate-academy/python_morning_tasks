@@ -1,4 +1,4 @@
-from reference.long_pressed_name import is_long_pressed_name
+from long_pressed_name import is_long_pressed_name
 
 
 def test_basic_true_cases():
@@ -16,12 +16,18 @@ def test_basic_true_cases():
     assert is_long_pressed_name(
         "anna", "aaaaannnnnaaaa"
     ), "True: All characters are long-pressed."
+    assert is_long_pressed_name('alex', 'alex'), "True: Typed exactly as the name."
 
 
 def test_basic_false_cases():
     assert not is_long_pressed_name(
         "saeed", "ssaaedd"
-    ), "False: 'e' and 'd' do not match."
+    ), "False: 'e' do not match."
+    assert not is_long_pressed_name("name", "nxaame"), "False: 'x' is not in 'name'."
+    assert not is_long_pressed_name("hello", "heoll"), "False: Incorrect order of characters."
+    assert not is_long_pressed_name("hello", "heo"), "False: Missing 'l' in 'typed'."
+    assert not is_long_pressed_name("start", "bstart"), "False: Extra character 'b' at the start."
+    assert not is_long_pressed_name("saeed", "ssaaedd"), "False: 'e' must have been pressed twice, but it was not in the typed output."
 
 
 def test_long_pressed():

@@ -1,2 +1,2 @@
-def reverse_only_letters(s: str) -> str:
+def reverse_only_letters(string: str) -> str:
     pass

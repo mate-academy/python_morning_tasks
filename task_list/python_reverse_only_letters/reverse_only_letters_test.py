@@ -1,4 +1,4 @@
-from reference.reverse_only_letters import reverse_only_letters
+from reverse_only_letters import reverse_only_letters
 
 
 def test_reverse_only_letters():

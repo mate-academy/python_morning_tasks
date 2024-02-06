@@ -38,7 +38,7 @@ def test_only_odd_numbers():
 
     assert (
         parity_checker(result, "odd") is True and len(result) == ods
-    ), f"List should contain all numbers from input list. Output: {result}"
+    ), f"Failed: Result list should contain all numbers from input list. Output: {result}"
 
 
 def test_zero_treats_as_even():

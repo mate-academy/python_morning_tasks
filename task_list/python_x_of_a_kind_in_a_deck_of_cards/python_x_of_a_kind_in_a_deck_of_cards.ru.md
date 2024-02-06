@@ -9,10 +9,10 @@ Return `True` if such partition is possible, or `False` otherwise.
 Example:
 ```python
 Input: deck = [1, 2, 3, 4, 4, 3, 2, 1]
-Output: true
+Output: True
 Explanation: Possible partition [1, 1], [2, 2], [3, 3], [4, 4]
 
 Input: deck = [1, 1, 1, 2, 2, 2, 3, 3]
-Output: false
+Output: False
 Explanation: No possible partition.
 ```

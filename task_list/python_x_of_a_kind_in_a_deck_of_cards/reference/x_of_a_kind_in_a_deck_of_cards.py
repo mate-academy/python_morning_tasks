@@ -1,5 +1,5 @@
 from collections import Counter
-from fractions import gcd
+from math import gcd
 
 
 def has_groups_size_x(deck: list[int]) -> bool:

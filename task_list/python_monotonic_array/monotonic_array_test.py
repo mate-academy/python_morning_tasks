@@ -1,7 +1,7 @@
 from monotonic_array import is_monotonic
 
 
-def assert_message(nums: list[int], expected: bool, output: bool):
+def assert_message(nums: list[int], expected: bool, output: bool) -> str:
     return f"Failed: Should be returned {expected} for array = {nums}. Output: {output}"
 
 

@@ -1,7 +1,7 @@
-An array is **monotonic** if it is either monotone increasing or monotone decreasing.
-An array `nums` is monotone increasing if for all `i <= j`, `nums[i] <= nums[j]`. An array nums is monotone decreasing if for all `i <= j`, `nums[i] >= nums[j]`.
+A list is **monotonic** if it is either monotone increasing or monotone decreasing.
+A `nums` list is monotone increasing if for all `i <= j`, `nums[i] <= nums[j]`. A `nums` list is monotone decreasing if for all `i <= j`, `nums[i] >= nums[j]`.
 
-Given an integer array `nums`, return `True` _if the given array is monotonic, or `False` otherwise_.
+Given a list of integers `nums`, return `True` _if the given list is monotonic, or `False` otherwise_.
 
 **_Examples_**:
 ```python

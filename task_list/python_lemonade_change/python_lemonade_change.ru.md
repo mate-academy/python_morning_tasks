@@ -4,7 +4,6 @@ Note that you do not have any change in hand at first.
 
 Given an integer array `bills` where `bills[i]` is the bill the $i^{th}$ customer pays, return `True` if you can provide **every customer** with the correct change, or `False` otherwise.
 
-
 ### Example 1:
 ```python
     Input: bills = [5, 5, 5, 10, 20]

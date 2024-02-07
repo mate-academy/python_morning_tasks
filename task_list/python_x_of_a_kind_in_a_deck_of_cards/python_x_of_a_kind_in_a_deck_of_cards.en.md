@@ -1,4 +1,4 @@
-You are given an integer array `deck` where `deck[i]` represents the number written on the $i^{th}$ card.
+You are given list of integers `deck` where `deck[i]` represents the number written on the $i^{th}$ card.
 
 Partition the cards into one or more groups such that:
 - Each group has exactly `x` cards where `x > 1`;

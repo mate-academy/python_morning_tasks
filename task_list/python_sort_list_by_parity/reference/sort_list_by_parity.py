@@ -1,4 +1,4 @@
-def sort_array_by_parity(nums: list[int]) -> list[int]:
+def sort_list_by_parity(nums: list[int]) -> list[int]:
     pointer = 0
 
     for idx, value in enumerate(nums):

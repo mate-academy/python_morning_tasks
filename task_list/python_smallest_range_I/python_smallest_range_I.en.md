@@ -1,4 +1,4 @@
-You are given an integer array `nums` and an integer `range_limit`.
+You are given list of integers `nums` and an integer `range_limit`.
 
 In one operation, you can choose any index `i` where `0 <= i < len(nums)` and change `nums[i]` to `nums[i] + x` where `x` is an integer from the range `[-range_limit, range_limit]`. You can apply this operation **at most once** for each index `i`.
 

@@ -1,6 +1,6 @@
-Given an integer array `nums`, move all the even integers at the beginning of the array followed by all the odd integers.
+Given a list of integers `nums`, move all the even integers at the beginning of the list followed by all the odd integers.
 
-_Return **any array** that satisfies this condition._
+_Return **any list** that satisfies this condition._
 
 Examples:
 ```python

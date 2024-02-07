@@ -7,11 +7,7 @@ If you add a plus `'+'` in the local name, everything after the first plus sign 
 `"m.y+name@email.com"` will be forwarded to `"my@email.com"`.
 It is possible to use both of these rules at the same time.
 
-Implement the `num_unique_emails` function took an array of strings `emails` where we send one email to each `emails[i]`, return the number of different addresses that actually receive mails.
-
-
-
-
+Implement the `num_unique_emails` function took a list of strings `emails` where we send one email to each `emails[i]`, return the number of different addresses that actually receive mails.
 
 Example:
 ```python

@@ -20,7 +20,7 @@ def test_max_minus_min_when_limit_is_set_to_zero():
     ), f"Failed: The score should be 224 - 124 = 100 for nums = {nums} and range_limit = {range_limit}"
 
 
-def test_negative_numbers_in_array():
+def test_negative_numbers_in_list():
     nums, range_limit = [-5, -2, -8, -1], 3
     assert (
         smallest_range(nums, range_limit) == 1

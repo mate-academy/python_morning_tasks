@@ -1,8 +1,8 @@
-from monotonic_array import is_monotonic
+from monotonic_list import is_monotonic
 
 
 def assert_message(nums: list[int], expected: bool, output: bool) -> str:
-    return f"Failed: Should be returned {expected} for array = {nums}. Output: {output}"
+    return f"Failed: Should be returned {expected} for list = {nums}. Output: {output}"
 
 
 def test_base_cases():
@@ -22,7 +22,7 @@ def test_base_cases():
     assert result == expected, assert_message(nums, expected, result)
 
 
-def test_single_value_in_array():
+def test_single_value_in_list():
     nums = [5]
     expected = True
     result = is_monotonic(nums)
@@ -41,7 +41,7 @@ def test_all_elements_are_the_same():
     assert result == expected, assert_message(nums, expected, result)
 
 
-def test_negative_numbers_in_array():
+def test_negative_numbers_in_list():
     nums = [-5, -4, -3, -2, -1]
     expected = True
     result = is_monotonic(nums)

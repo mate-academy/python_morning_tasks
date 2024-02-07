@@ -2,7 +2,7 @@ At a lemonade stand, each lemonade costs `$5`. Customers are standing in a queue
 
 Note that you do not have any change in hand at first.
 
-Given an integer array `bills` where `bills[i]` is the bill the $i^{th}$ customer pays, return `True` if you can provide **every customer** with the correct change, or `False` otherwise.
+Given a list of integers `bills` where `bills[i]` is the bill the $i^{th}$ customer pays, return `True` if you can provide **every customer** with the correct change, or `False` otherwise.
 
 ### Example 1:
 ```python

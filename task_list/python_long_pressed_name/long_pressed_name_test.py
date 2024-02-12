@@ -20,6 +20,9 @@ def test_basic_true_cases():
 
 
 def test_basic_false_cases():
+    assert not is_long_pressed_name(
+        "saeed", "ssaaedd"
+    ), "False: 'e' do not match."
     assert not is_long_pressed_name("name", "nxaame"), "False: 'x' is not in 'name'."
     assert not is_long_pressed_name("hello", "heoll"), "False: Incorrect order of characters."
     assert not is_long_pressed_name("hello", "heo"), "False: Missing 'l' in 'typed'."

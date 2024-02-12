@@ -1,0 +1,25 @@
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def increasing_binary_search_tree(root: TreeNode) -> TreeNode:
+    dummy = tail = TreeNode()
+    node = root
+
+    stack = []
+    while stack or node is not None:
+        while node is not None:
+            stack.append(node)
+            node = node.left
+        node = stack.pop()
+
+        tail.right = node
+        tail = node
+        node.left = None
+
+        node = node.right
+
+    return dummy.right

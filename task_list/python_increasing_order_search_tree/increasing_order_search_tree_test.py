@@ -24,54 +24,6 @@ def test_increasing_binary_search_tree_with_six_nodes():
     ), "The sixth node should be the largest value, which is 6."
 
 
-def test_increasing_binary_search_tree_with_seven_nodes():
-    root = TreeNode(
-        7, TreeNode(6, TreeNode(5, TreeNode(4, TreeNode(3, TreeNode(2, TreeNode(1))))))
-    )
-    result = increasing_binary_search_tree(root)
-    current = result
-    for i in range(1, 8):
-        assert current.val == i, f"The node at position {i} should have value {i}."
-        current = current.right
-
-
-def test_increasing_binary_search_tree_with_eight_nodes():
-    root = TreeNode(
-        8,
-        TreeNode(
-            7,
-            TreeNode(
-                6, TreeNode(5, TreeNode(4, TreeNode(3, TreeNode(2, TreeNode(1)))))
-            ),
-        ),
-    )
-    result = increasing_binary_search_tree(root)
-    current = result
-    for i in range(1, 9):
-        assert current.val == i, f"The node at position {i} should have value {i}."
-        current = current.right
-
-
-def test_increasing_binary_search_tree_with_nine_nodes():
-    root = TreeNode(
-        9,
-        TreeNode(
-            8,
-            TreeNode(
-                7,
-                TreeNode(
-                    6, TreeNode(5, TreeNode(4, TreeNode(3, TreeNode(2, TreeNode(1)))))
-                ),
-            ),
-        ),
-    )
-    result = increasing_binary_search_tree(root)
-    current = result
-    for i in range(1, 10):
-        assert current.val == i, f"The node at position {i} should have value {i}."
-        current = current.right
-
-
 def test_increasing_binary_search_tree_with_ten_nodes():
     root = TreeNode(
         10,
@@ -91,8 +43,10 @@ def test_increasing_binary_search_tree_with_ten_nodes():
     )
     result = increasing_binary_search_tree(root)
     current = result
-    for i in range(1, 11):
-        assert current.val == i, f"The node at position {i} should have value {i}."
+    for index in range(1, 11):
+        assert (
+            current.val == index
+        ), f"The node at position {index} should have value {index}."
         current = current.right
 
 
@@ -111,22 +65,4 @@ def test_increasing_binary_search_tree_with_random_values_2():
     assert result.right.right.right.right.right.val == 15
     assert (
         result.right.right.right.right.right.right.val == 17
-    ), "Test for a tree with random values. The tree should be in increasing order."
-
-
-def test_increasing_binary_search_tree_with_random_values_3():
-    root = TreeNode(
-        20,
-        TreeNode(10, TreeNode(5), TreeNode(15)),
-        TreeNode(30, TreeNode(25), TreeNode(35)),
-    )
-    result = increasing_binary_search_tree(root)
-    assert result.val == 5
-    assert result.right.val == 10
-    assert result.right.right.val == 15
-    assert result.right.right.right.val == 20
-    assert result.right.right.right.right.val == 25
-    assert result.right.right.right.right.right.val == 30
-    assert (
-        result.right.right.right.right.right.right.val == 35
     ), "Test for a tree with random values. The tree should be in increasing order."

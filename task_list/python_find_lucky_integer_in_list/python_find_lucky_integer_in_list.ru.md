@@ -6,7 +6,7 @@ Return _the largest **lucky integer** in the list_. If there is no **lucky integ
 ```python
 Input: nums = [2, 2, 3, 4]
 Output: 2
-Explanation: The only lucky number here - 2. Because frequency[2] == 2.
+Explanation: The only lucky number here would be 2. Because frequency[2] == 2.
 
 
 Input: nums = [1, 2, 2, 3, 3, 3]

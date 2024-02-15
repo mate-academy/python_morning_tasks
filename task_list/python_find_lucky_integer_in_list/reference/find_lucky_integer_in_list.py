@@ -1,9 +1,9 @@
 # Time complexity: O(n)
 
 # Space: The space complexity of this function is O(n),
-# where n is the number of unique elements in the input list nums.
+# where num is the number of unique elements in the input list nums.
 # This is because we use a hashmap to store the frequency of each element,
-# and a set to store unique elems. Both sizes are at most "n"
+# and a set to store unique elements. Both sizes are at most "num"
 
 
 def find_lucky(nums: list[int]) -> int:

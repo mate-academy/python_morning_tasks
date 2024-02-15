@@ -6,7 +6,7 @@ A **substring** is a contiguous sequence of characters within a string
 Input: words = ["mass", "as", "hero", "superhero"]
 Output: ["as", "hero"]
 Explanation: "as" - substring of "mass", "hero" - substring of "superhero".
-Also a valid answer: ["hero","as"]
+Also a valid answer: ["hero", "as"]
 
 Input: words = ["leetcode", "et", "code"]
 Output: ["et", "code"]

@@ -6,7 +6,7 @@
 Input: words = ["mass", "as", "hero", "superhero"]
 Output: ["as", "hero"]
 Пояснення: "as" є підрядком слова "mass", "hero" - підрядок "superhero".
-Також валідним результатом вважатиметься: ["hero","as"]
+Також валідним результатом вважатиметься: ["hero", "as"]
 
 Input: words = ["leetcode", "et", "code"]
 Output: ["et", "code"]

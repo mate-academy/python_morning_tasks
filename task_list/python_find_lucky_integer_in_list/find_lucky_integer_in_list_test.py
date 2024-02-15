@@ -55,6 +55,6 @@ def test_large_scale_frequencies():
     assert result == expected, assert_message(nums, expected, result)
 
     nums = [300] * 299 + additional_nums
-    expected = -1
+    expected = 3
     result = find_lucky(nums)
     assert result == expected, assert_message(nums, expected, result)

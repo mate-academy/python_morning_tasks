@@ -1,9 +1,5 @@
 import random
 
-
-import pytest
-
-
 from fair_candy_swap import candy_swap
 
 

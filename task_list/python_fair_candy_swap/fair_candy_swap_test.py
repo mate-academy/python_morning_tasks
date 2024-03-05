@@ -31,8 +31,9 @@ def generate_different_box_amount(sizes_sum: int) -> tuple[list, list]:
 def generate_single_box_vs_large_list(sizes_sum: int) -> tuple[list, list]:
     single_box = sizes_sum // 2
     candies1 = [single_box]
-    candies2 = [1 for box in range(1, sizes_sum) if box % 2]
+    candies2 = [1] * single_box
     total_candies2 = sum(candies2)
+    
     return candies1, candies2 + [total_candies2 + single_box]
 
 

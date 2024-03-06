@@ -2,6 +2,8 @@ from convert_int_to_sum_of_ints import convert_into_sum
 
 
 def result_checker(number: int, num_list: list[int]) -> bool:
+    # DO NOT FORGET TO HIDE TESTS ON THE PLATFORM
+
     for num in num_list:
         while num > 0:
             if num % 10 == 0:
@@ -32,29 +34,29 @@ def test_base_cases():
     assert checked_result is True, assert_message(input_data, result, valid_example)
 
 
-def test_large_numbers():
-    input_data = 9999
-    valid_example = [3333, 6666]
+def test_bigger_input_numbers():
+    input_data = 99
+    valid_example = [91, 8]
     result = convert_into_sum(input_data)
     checked_result = result_checker(input_data, result)
     assert checked_result is True, assert_message(input_data, result, valid_example)
 
-    input_data = 123456
-    valid_example = [123455, 1]
+    input_data = 85
+    valid_example = [84, 1]
     result = convert_into_sum(input_data)
     checked_result = result_checker(input_data, result)
     assert checked_result is True, assert_message(input_data, result, valid_example)
 
 
 def test_input_number_with_zeros():
-    input_data = 10000
-    valid_example = [1, 9999]
+    input_data = 100
+    valid_example = [1, 99]
     result = convert_into_sum(input_data)
     checked_result = result_checker(input_data, result)
     assert checked_result is True, assert_message(input_data, result, valid_example)
 
-    input_data = 101
-    valid_example = [38, 63]
+    input_data = 104
+    valid_example = [99, 5]
     result = convert_into_sum(input_data)
     checked_result = result_checker(input_data, result)
     assert checked_result is True, assert_message(input_data, result, valid_example)

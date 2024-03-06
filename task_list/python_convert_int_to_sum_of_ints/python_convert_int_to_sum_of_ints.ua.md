@@ -4,7 +4,6 @@
 - `a` і `b` є **Безнульовими числами**.
 - `a + b = num`
 
-The test cases are generated so that there is at least one valid solution. If there are many valid solutions, you can return any of them.
 Можеш бути впевненим, що завжди існуватиме принаймні одне дійсне рішення. Якщо дійсних рішень багато, можеш повернути будь-яке з них.
 
 ---

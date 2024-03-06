@@ -20,4 +20,4 @@ _Note that there are other valid answers that can be accepted_:`[8, 3]`.
 
 ---
 **_Constraints_**:
-- 2 <= `num` <= 104
+- 2 <= `num` <= $10^4$

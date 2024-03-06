@@ -34,23 +34,23 @@ def test_base_cases():
     assert checked_result is True, assert_message(input_data, result, valid_example)
 
 
-def test_bigger_input_numbers():
-    input_data = 99
-    valid_example = [91, 8]
+def test_large_numbers():
+    input_data = 9999
+    valid_example = [3333, 6666]
     result = convert_into_sum(input_data)
     checked_result = result_checker(input_data, result)
     assert checked_result is True, assert_message(input_data, result, valid_example)
 
-    input_data = 85
-    valid_example = [84, 1]
+    input_data = 123456
+    valid_example = [123455, 1]
     result = convert_into_sum(input_data)
     checked_result = result_checker(input_data, result)
     assert checked_result is True, assert_message(input_data, result, valid_example)
 
 
 def test_input_number_with_zeros():
-    input_data = 100
-    valid_example = [1, 99]
+    input_data = 10000
+    valid_example = [1, 9999]
     result = convert_into_sum(input_data)
     checked_result = result_checker(input_data, result)
     assert checked_result is True, assert_message(input_data, result, valid_example)

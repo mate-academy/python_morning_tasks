@@ -15,4 +15,4 @@ def test_hello_world_printed():
 
     assert (
         printed_output == expected_output
-    ), f"Failed. Printed phrase is not valid. Printed: {printed_output}, while Expected: {expected_output}" 
+    ), f"Failed. Printed phrase is not valid. Printed: {printed_output}, while Expected: {expected_output}"

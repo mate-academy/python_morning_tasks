@@ -53,9 +53,3 @@ def test_large_list():
 
     for condition in conditions:
         assert condition is True, "Failed. Should work correctly for large lists"
-
-
-test_base_cases()
-test_duplicated_elements()
-test_big_numbers()
-test_large_list()

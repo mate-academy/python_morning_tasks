@@ -8,7 +8,7 @@ def assert_message(input_num: int, expected: list[int], output: list[int]) -> st
     return f"Failed. {main_msg}. {expected_msg}. {output_msg}."
 
 
-def get_conditions(res_list: list[int], num: int):
+def get_conditions(res_list: list[int], num: int) -> list:
     return [len(res_list) == num, sum(res_list) == 0, len(set(res_list)) == num]
 
 

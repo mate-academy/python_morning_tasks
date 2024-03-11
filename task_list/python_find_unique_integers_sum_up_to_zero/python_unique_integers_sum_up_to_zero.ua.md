@@ -1,4 +1,3 @@
-Given an integer `number`, return any list containing `number` of **unique** integers such that they add up to `0`.  
 На вхід дається ціле число `number`, поверни будь-який список, що містить `number` **унікальних** цілих чисел, сума яких дорівнює `0`.
 
 **_Приклади_**:

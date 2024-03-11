@@ -13,10 +13,10 @@ def assert_message(expected_var_name: str, expected_var_value: int, value: Any) 
 def test_needed_variables_defined():
     variables = add_and_subtract
 
-    for variable, _ in expected_variables.items():
+    for variable_name in expected_variables.keys():
         assert hasattr(
-            variables, variable
-        ), f"Failed. Variable {variable} should be defined"
+            variables, variable_name
+        ), f"Failed. Variable {variable_name} should be defined"
 
 
 def test_proper_values():

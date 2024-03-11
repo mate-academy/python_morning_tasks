@@ -24,7 +24,3 @@ def test_proper_formulas_with_variables():
         assert (
             check_var == var_value
         ), f"Failed. Variable {var_name} should be equal to {var_value}"
-
-
-test_variables_are_defined()
-test_proper_formulas_with_variables()

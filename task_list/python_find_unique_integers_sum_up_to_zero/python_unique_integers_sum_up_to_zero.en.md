@@ -4,7 +4,7 @@ Given an integer `number`, return any list containing `number` of **unique** int
 ```python
 Input: number = 5
 Output: [-7, -1, 1, 3, 4]
-Explanation: These arrays also are accepted [-5, -1, 1, 2, 3], [-3, -1, 2, -2, 4]
+Explanation: These lists also are accepted [-5, -1, 1, 2, 3], [-3, -1, 2, -2, 4]
 
 Input: number = 3
 Output: [-1, 0, 1]

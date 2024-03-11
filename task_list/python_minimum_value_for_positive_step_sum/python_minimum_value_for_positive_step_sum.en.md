@@ -1,6 +1,6 @@
 Given a list of integers `nums`, you start with an initial **positive** value _start_value_.
 
-In each iteration, you calculate the step by step sum of _start_value_ plus elements in nums (from left to right).
+In each iteration, you calculate the step by step sum of _start_value_ plus elements in `nums` (from left to right).
 
 Return the **minimum positive** value of _start_value_ such that the step by step sum is never less than `1`.
 
@@ -8,7 +8,7 @@ Return the **minimum positive** value of _start_value_ such that the step by ste
 ```python
 Input: nums = [-3, 2, -3, 4, 2]
 Output: 5
-Explanation: If you choose startValue = 4, in the third iteration your step by step sum is less than 1.
+Explanation: If you choose start_value = 4, in the third iteration your step by step sum is less than 1.
 step by step sum:
 - start_value = 4
     (4 - 3) = 1

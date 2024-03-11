@@ -1,17 +1,23 @@
 def find_distance_value(
     first_list: list[int], second_list: list[int], target: int
 ) -> int:
-    """
-    Simple and straightforward solution ( brute force ).
-    """
+    second_list.sort()
+    count = 0
 
-    counter = 0
+    first_len, second_len = len(first_list), len(second_list)
 
-    for first_num in first_list:
-        for second_num in second_list:
-            diff = abs(first_num - second_num)
-            if diff <= target:
-                counter += 1
+    for num in range(first_len):
+        low, high = 0, second_len - 1
+
+        while low <= high:
+            mid = (low + high) // 2
+
+            if abs(first_list[num] - second_list[mid]) <= target:
+                count += 1
                 break
+            elif first_list[num] < second_list[mid]:
+                high = mid - 1
+            else:
+                low = mid + 1
 
-    return len(first_list) - counter
+    return first_len - count

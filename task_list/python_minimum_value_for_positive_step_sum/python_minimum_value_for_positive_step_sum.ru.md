@@ -33,4 +33,4 @@ Output: 5
 ---
 **_Constraints_**:
 - 1 <= `len(nums)` <= 100
-- 100 <= `nums[i]` <= 100
+- -100 <= `nums[i]` <= 100

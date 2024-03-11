@@ -1,4 +1,4 @@
-You are given a string`string` formed by digits and `#`. We want to map `string` to English lowercase characters as follows:
+You are given a string `string` formed by digits and `#`. We want to map `string` to English lowercase characters as follows:
 - Characters (`a` to `i`) are represented by (`1` to `9`) respectively
 - Characters (`j` to `z`) are represented by (`10#` to `26#`) respectively
 

@@ -1,6 +1,4 @@
-import sys
-
-from io import StringIO
+import subprocess
 
 import lower_and_upper
 
@@ -24,14 +22,12 @@ def test_variable_is_defined_as_lowercase_string():
 
 
 def test_variable_was_printed():
-    captured_output = StringIO()
-    sys.stdout = captured_output
+    process = subprocess.Popen(["python", "lower_and_upper.py"], stdout=subprocess.PIPE)
 
-    exec(open("lower_and_upper.py").read())
-    printed_output = captured_output.getvalue().strip()
-    sys.stdout = sys.__stdout__
-
+    captured_output = process.communicate()[0].decode()
+    printed_output = captured_output.strip()
     lowered_name = getattr(VARIABLES, VAR_NAME).lower()
+
     assert (
         printed_output == lowered_name
     ), f"Failed. Variable {VAR_NAME} should be printed out as lowercase string. You printed: {printed_output} != {lowered_name}"

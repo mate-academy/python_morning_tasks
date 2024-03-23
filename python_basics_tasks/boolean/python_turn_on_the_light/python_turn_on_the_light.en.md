@@ -1,0 +1,2 @@
+In this task, you will learn how to work with the logical operator `not`.  
+On the screen you can see the `is_light_on` variable. Using `print()` and the logical operator `not` change the value of the `is_light_on` variable to the opposite.

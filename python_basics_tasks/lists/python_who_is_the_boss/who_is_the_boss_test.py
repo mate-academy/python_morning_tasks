@@ -36,8 +36,8 @@ def test_first_family_members_printed():
 
 
 def test_first_family_member_not_hardcoded_in_print():
-    with open(TEST_FILE.__file__) as f:
-        code = f.read()
+    with open(TEST_FILE.__file__) as file:
+        code = file.read()
 
         pattern = r"print\(my_family\[0\]\)"
         assert (

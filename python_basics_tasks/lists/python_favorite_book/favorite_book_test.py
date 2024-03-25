@@ -31,7 +31,7 @@ def test_list_variable_is_defined():
 def test_result_list_was_printed():
     books = getattr(TESTED_FILE, VAR_NAME)
 
-    process = subprocess.Popen(["python", "favorite_book.py"], stdout=subprocess.PIPE)
+    process = subprocess.Popen(["python", favorite_book.__file__], stdout=subprocess.PIPE)
     captured_string_output = process.communicate()[0].decode()
     assert (
         captured_string_output

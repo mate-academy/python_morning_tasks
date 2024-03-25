@@ -26,7 +26,7 @@ def test_variable_is_defined_and_not_changed():
 
 def test_expected_result_was_printed():
     process = subprocess.Popen(
-        ["python", "turn_on_the_light.py"], stdout=subprocess.PIPE
+        ["python", turn_on_the_light.__file__], stdout=subprocess.PIPE
     )
 
     captured_output = process.communicate()[0].decode()

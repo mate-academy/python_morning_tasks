@@ -41,7 +41,7 @@ def test_expected_result_was_printed():
 
 def test_result_not_hardcoded():
     with open(TESTED_FILE.__file__) as file:
-        code = f.read()
+        code = file.read()
 
         pattern = r"\bFalse\b"
         assert (

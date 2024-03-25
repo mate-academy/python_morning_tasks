@@ -25,7 +25,7 @@ def test_variables_defined():
 def test_family_members_printed():
     result_value = getattr(TEST_FILE, VAR_NAME)
 
-    process = subprocess.Popen(["python", "newborn.py"], stdout=subprocess.PIPE)
+    process = subprocess.Popen(["python", newborn.__file__], stdout=subprocess.PIPE)
     captured_string_output = process.communicate()[0].decode()
     assert (
         captured_string_output

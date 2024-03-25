@@ -24,7 +24,7 @@ def test_variables_defined():
 def test_first_family_members_printed():
     result_value = getattr(TEST_FILE, VAR_NAME)[0]
 
-    process = subprocess.Popen(["python", "who_is_the_boss.py"], stdout=subprocess.PIPE)
+    process = subprocess.Popen(["python", who_is_the_boss.__file__], stdout=subprocess.PIPE)
     captured_output = process.communicate()[0].decode().strip()
     assert (
         captured_output

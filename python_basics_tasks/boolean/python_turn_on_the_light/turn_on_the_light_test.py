@@ -51,7 +51,7 @@ def test_result_not_hardcoded():
 
 def test_result_printed_with_not():
     with open(TESTED_FILE.__file__) as file:
-        code = f.read()
+        code = file.read()
 
         pattern = r"print\(not is_light_on\)"
         assert (

@@ -39,7 +39,7 @@ def test_family_members_printed():
 
 def test_additional_name_added_with_append():
     with open(TEST_FILE.__file__) as file:
-        code = f.read()
+        code = file.read()
 
         pattern = r"my_family\.append\((?:'[^']*'|\"[^\"]*\")\)"
         assert (

@@ -11,7 +11,7 @@ expected_odd_list = [num for num in expected_range if num % 2 == 1]
 expected_len = len(expected_odd_list)
 
 
-def generate_pairs(pairs_num: int, expected: list, atual: list):
+def generate_pairs(pairs_num: int, expected: list, actual: list) -> list:
     result_list = []
     for num in range(pairs_num):
         start, end = random.choice(expected_range), random.choice(expected_range)
@@ -19,7 +19,7 @@ def generate_pairs(pairs_num: int, expected: list, atual: list):
             start *= -1
 
         first = take_slice(expected, start, end)
-        second = take_slice(atual, start, end)
+        second = take_slice(actual, start, end)
         result_list.append(first == second)
 
     return result_list

@@ -10,7 +10,7 @@ expected_list = list(expected_range)
 expected_len = len(expected_list)
 
 
-def generate_pairs(pairs_num: int, expected: list, atual: list):
+def generate_pairs(pairs_num: int, expected: list, actual: list) -> list:
     result_list = []
     for num in range(pairs_num):
         start, end = random.choice(expected_range), random.choice(expected_range)

@@ -18,7 +18,7 @@ def generate_pairs(pairs_num: int, expected: list, actual: list) -> list:
             start *= -1
 
         first = take_slice(expected, start, end)
-        second = take_slice(atual, start, end)
+        second = take_slice(actual, start, end)
         result_list.append(first == second)
 
     return result_list

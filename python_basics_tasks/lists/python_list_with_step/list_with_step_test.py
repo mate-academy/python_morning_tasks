@@ -26,8 +26,7 @@ def generate_pairs(pairs_num: int, expected: list, actual: list) -> list:
 
 
 def take_slice(collection: list, start: int, end: int) -> list:
-    res = collection[start:end]
-    return res
+    return collection[start:end]
 
 
 def test_odd_numbers_generated_via_slice():

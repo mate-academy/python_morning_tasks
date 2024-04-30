@@ -30,8 +30,8 @@ def test_print_works_correctly():
 
     assert (
         captured_print
-    ), "Failed. Result should be printed out with 'print()' function"
+    ), "Failed. Result should be printed out with 'print()' function."
 
     assert (
         captured_print == PHRASE_TO_PRINT
-    ), f"Failed. {PHRASE_TO_PRINT} should be printed. Your output: {captured_print}"
+    ), f"Failed. {PHRASE_TO_PRINT} should be printed. Your output: '{captured_print}'."

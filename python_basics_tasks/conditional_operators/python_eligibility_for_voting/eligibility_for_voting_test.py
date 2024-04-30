@@ -19,12 +19,12 @@ def test_variable_is_properly_defined():
     assert isinstance(age, int), f"Failed. {VAR_NAME} should be type <int>"
     assert (
         age == VAR_VALUE
-    ), f"Failed. {VAR_NAME} should be equal to <25>. {VAR_VALUE} != {age}"
+    ), f"Failed. {VAR_NAME} should be equal to <{VAR_VALUE}>. {VAR_VALUE} != {age}"
 
 
 def test_print_works_correctly():
     process = subprocess.Popen(
-        ["python", eligibility_for_voting.__file__], stdout=subprocess.PIPE
+        ["python", TESTED_FILE.__file__], stdout=subprocess.PIPE
     )
     captured_print = process.communicate()[0].decode().strip()
 
@@ -35,7 +35,3 @@ def test_print_works_correctly():
     assert (
         captured_print == PHRASE_TO_PRINT
     ), f"Failed. {PHRASE_TO_PRINT} should be printed. Your output: {captured_print}"
-
-
-test_print_works_correctly()
-test_variable_is_properly_defined()
